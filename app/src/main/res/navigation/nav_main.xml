@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.screenshot.FragmentA"
+        tools:layout="@layout/fragment_a"
+        android:label="FragmentA" >
+        <action
+            android:id="@+id/action_fragmentA_to_fraagmentB"
+            app:destination="@id/fraagmentB" />
+        <action
+            android:id="@+id/action_fragmentA_to_shakeActivity"
+            app:destination="@id/shakeActivity" />
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentC"
+            app:destination="@id/fragmentC" />
+    </fragment>
+    <fragment
+        android:id="@+id/fraagmentB"
+        android:name="com.example.screenshot.FraagmentB"
+        tools:layout="@layout/fragment_b"
+        android:label="FraagmentB" />
+    <activity
+        android:id="@+id/shakeActivity"
+        android:name="com.example.screenshot.shakeActivity"
+        android:label="activity_shake"
+        tools:layout="@layout/activity_shake" />
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.screenshot.radiobutton.FragmentC"
+        android:label="FragmentC" />
+</navigation>
