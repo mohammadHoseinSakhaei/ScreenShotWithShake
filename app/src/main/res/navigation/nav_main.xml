@@ -16,9 +16,6 @@
         <action
             android:id="@+id/action_fragmentA_to_shakeActivity"
             app:destination="@id/shakeActivity" />
-        <action
-            android:id="@+id/action_fragmentA_to_fragmentC"
-            app:destination="@id/fragmentC" />
     </fragment>
     <fragment
         android:id="@+id/fraagmentB"
@@ -30,8 +27,4 @@
         android:name="com.example.screenshot.shakeActivity"
         android:label="activity_shake"
         tools:layout="@layout/activity_shake" />
-    <fragment
-        android:id="@+id/fragmentC"
-        android:name="com.example.screenshot.radiobutton.FragmentC"
-        android:label="FragmentC" />
 </navigation>
