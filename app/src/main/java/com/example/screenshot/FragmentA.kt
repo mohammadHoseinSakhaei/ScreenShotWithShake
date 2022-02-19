@@ -68,6 +68,8 @@ class FragmentA :Fragment() {
 
 
 
+
+
         verifystoragepermissions(requireActivity())
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         val btn : Button = view.findViewById(R.id.clickme)
